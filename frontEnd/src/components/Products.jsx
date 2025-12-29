@@ -30,42 +30,42 @@ const Products = () => {
             <div className="group col w-full sm:w-64 md:w-80 h-60 flex flex-col items-center justify-center relative">
               <img
                 src="src\assets\Drinks\Smoothie.png"
-                className="w-[88%] h-[85%] rounded-3xl shadow-2xl shadow-blue-700 group-hover:h-full group-hover:w-full transition-all duration-100 cursor-pointer absolute"
+                className="w-[88%] h-[85%] rounded-3xl shadow-2xl shadow-blue-700 md:group-hover:h-full md:group-hover:w-full transition-all duration-100 cursor-pointer absolute"
                 alt="Smoothie"
               />
 
-              <div onClick={selectDrink} name="Shahi Sparkle" className="absolute top-[60%] left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-hover:top-1/2 bg-white/20 backdrop-blur-md text-white border border-white/30 py-2 px-6 rounded-lg font-semibold transition-all duration-500 cursor-pointer text-sm md:text-base" >
+              <div onClick={selectDrink} name="Shahi Sparkle" className="absolute top-[60%] md:top-[60%] left-1/2 -translate-x-1/2 opacity-100 md:opacity-0 md:group-hover:opacity-100 md:group-hover:top-1/2 bg-white/20 backdrop-blur-md text-white border border-white/30 py-2 px-6 rounded-lg font-semibold transition-all duration-500 cursor-pointer text-sm md:text-base" >
                 BUY NOW
               </div>
-              <div name="Shahi Sparkle" className="name font-bold absolute top-[-10%] w-48 md:w-56 flex items-center justify-center left-1/2 -translate-x-1/2 text-black opacity-0 group-hover:opacity-100 group-hover:top-10 bg-black/20 backdrop-blur-md cursor-pointer border border-white/30 py-2 px-4 md:px-6 rounded-lg transition-all duration-500 text-sm md:text-base">
+              <div name="Shahi Sparkle" className="name font-bold absolute top-10 md:top-[-10%] w-48 md:w-56 flex items-center justify-center left-1/2 -translate-x-1/2 text-black opacity-100 md:opacity-0 md:group-hover:opacity-100 md:group-hover:top-10 bg-black/20 backdrop-blur-md cursor-pointer border border-white/30 py-2 px-4 md:px-6 rounded-lg transition-all duration-500 text-sm md:text-base">
                 Shahi Sparkle
               </div>
             </div>
             <div className="group col w-full sm:w-64 md:w-80 h-60 flex flex-col items-center justify-center relative">
               <img
                 src="src\assets\Drinks\Smoothie.png"
-                className="w-[88%] h-[85%] rounded-3xl shadow-2xl shadow-blue-700 group-hover:h-full group-hover:w-full transition-all duration-100 cursor-pointer absolute"
+                className="w-[88%] h-[85%] rounded-3xl shadow-2xl shadow-blue-700 md:group-hover:h-full md:group-hover:w-full transition-all duration-100 cursor-pointer absolute"
                 alt="Smoothie"
               />
 
-              <div onClick={selectDrink} name="Juggad Juice" className="absolute top-[60%] left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-hover:top-1/2 bg-white/20 backdrop-blur-md text-white border border-white/30 py-2 px-6 rounded-lg font-semibold transition-all duration-500 cursor-pointer text-sm md:text-base" >
+              <div onClick={selectDrink} name="Juggad Juice" className="absolute top-[60%] md:top-[60%] left-1/2 -translate-x-1/2 opacity-100 md:opacity-0 md:group-hover:opacity-100 md:group-hover:top-1/2 bg-white/20 backdrop-blur-md text-white border border-white/30 py-2 px-6 rounded-lg font-semibold transition-all duration-500 cursor-pointer text-sm md:text-base" >
                 BUY NOW
               </div>
-              <div className="name font-bold absolute top-[-10%] w-48 md:w-56 flex items-center justify-center left-1/2 -translate-x-1/2 text-black opacity-0 group-hover:opacity-100 group-hover:top-10 bg-black/20 backdrop-blur-md cursor-pointer border border-white/30 py-2 px-4 md:px-6 rounded-lg transition-all duration-500 text-sm md:text-base">
+              <div className="name font-bold absolute top-10 md:top-[-10%] w-48 md:w-56 flex items-center justify-center left-1/2 -translate-x-1/2 text-black opacity-100 md:opacity-0 md:group-hover:opacity-100 md:group-hover:top-10 bg-black/20 backdrop-blur-md cursor-pointer border border-white/30 py-2 px-4 md:px-6 rounded-lg transition-all duration-500 text-sm md:text-base">
                 Jugaad Juice
               </div>
             </div>
             <div className="group col w-full sm:w-64 md:w-80 h-60 flex flex-col items-center justify-center relative">
               <img
                 src="src\assets\Drinks\Smoothie.png"
-                className="w-[88%] h-[85%] rounded-3xl shadow-2xl shadow-blue-700 group-hover:h-full group-hover:w-full transition-all duration-100 cursor-pointer absolute"
+                className="w-[88%] h-[85%] rounded-3xl shadow-2xl shadow-blue-700 md:group-hover:h-full md:group-hover:w-full transition-all duration-100 cursor-pointer absolute"
                 alt="Smoothie"
               />
 
-              <div onClick={selectDrink} name="Thanda Thumka" className="absolute top-[60%] left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-hover:top-1/2 bg-white/20 backdrop-blur-md text-white border border-white/30 py-2 px-6 rounded-lg font-semibold transition-all duration-500 cursor-pointer text-sm md:text-base" >
+              <div onClick={selectDrink} name="Thanda Thumka" className="absolute top-[60%] md:top-[60%] left-1/2 -translate-x-1/2 opacity-100 md:opacity-0 md:group-hover:opacity-100 md:group-hover:top-1/2 bg-white/20 backdrop-blur-md text-white border border-white/30 py-2 px-6 rounded-lg font-semibold transition-all duration-500 cursor-pointer text-sm md:text-base" >
                 BUY NOW
               </div>
-              <div className="name font-bold absolute top-[-10%] w-48 md:w-56 flex items-center justify-center left-1/2 -translate-x-1/2 text-black opacity-0 group-hover:opacity-100 group-hover:top-10 bg-black/20 backdrop-blur-md cursor-pointer border border-white/30 py-2 px-4 md:px-6 rounded-lg transition-all duration-500 text-sm md:text-base">
+              <div className="name font-bold absolute top-10 md:top-[-10%] w-48 md:w-56 flex items-center justify-center left-1/2 -translate-x-1/2 text-black opacity-100 md:opacity-0 md:group-hover:opacity-100 md:group-hover:top-10 bg-black/20 backdrop-blur-md cursor-pointer border border-white/30 py-2 px-4 md:px-6 rounded-lg transition-all duration-500 text-sm md:text-base">
                 Thanda Thumka
               </div>
             </div>
@@ -79,28 +79,28 @@ const Products = () => {
             <div className="group col w-full sm:w-64 md:w-80 h-60 flex flex-col items-center justify-center relative">
               <img
                 src="src\assets\Drinks\pinkDrink.png"
-                className="w-[88%] h-[85%] rounded-3xl shadow-2xl shadow-blue-700 group-hover:h-full group-hover:w-full transition-all duration-100 cursor-pointer absolute"
+                className="w-[88%] h-[85%] rounded-3xl shadow-2xl shadow-blue-700 md:group-hover:h-full md:group-hover:w-full transition-all duration-100 cursor-pointer absolute"
                 alt="pinkDrink"
               />
 
-              <div onClick={selectDrink} name="Jala Khatta Crush" className="absolute top-[60%] left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-hover:top-1/2 bg-black/20 backdrop-blur-md text-white border border-white/30 py-2 px-6 rounded-lg font-semibold transition-all duration-500 cursor-pointer text-sm md:text-base" >
+              <div onClick={selectDrink} name="Jala Khatta Crush" className="absolute top-[60%] md:top-[60%] left-1/2 -translate-x-1/2 opacity-100 md:opacity-0 md:group-hover:opacity-100 md:group-hover:top-1/2 bg-black/20 backdrop-blur-md text-white border border-white/30 py-2 px-6 rounded-lg font-semibold transition-all duration-500 cursor-pointer text-sm md:text-base" >
                 BUY NOW
               </div>
-              <div className="name font-bold absolute top-[-10%] w-48 md:w-56 flex items-center justify-center left-1/2 -translate-x-1/2 text-black opacity-0 group-hover:opacity-100 group-hover:top-10 bg-black/20 backdrop-blur-md cursor-pointer border border-white/30 py-2 px-4 md:px-6 rounded-lg transition-all duration-500 text-sm md:text-base">
+              <div className="name font-bold absolute top-10 md:top-[-10%] w-48 md:w-56 flex items-center justify-center left-1/2 -translate-x-1/2 text-black opacity-100 md:opacity-0 md:group-hover:opacity-100 md:group-hover:top-10 bg-black/20 backdrop-blur-md cursor-pointer border border-white/30 py-2 px-4 md:px-6 rounded-lg transition-all duration-500 text-sm md:text-base">
                 Kala Khatta Crush
               </div>
             </div>
             <div className="group col w-full sm:w-64 md:w-80 h-60 flex flex-col items-center justify-center relative">
               <img
                 src="src\assets\Drinks\pinkDrink.png"
-                className="w-[88%] h-[85%] rounded-3xl shadow-2xl shadow-blue-700 group-hover:h-full group-hover:w-full transition-all duration-100 cursor-pointer absolute"
+                className="w-[88%] h-[85%] rounded-3xl shadow-2xl shadow-blue-700 md:group-hover:h-full md:group-hover:w-full transition-all duration-100 cursor-pointer absolute"
                 alt="pinkDrink"
               />
 
-              <div onClick={selectDrink} name="Toofani Tonic" className="absolute top-[60%] left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-hover:top-1/2 bg-black/20 backdrop-blur-md text-white border border-white/30 py-2 px-6 rounded-lg font-semibold transition-all duration-500 cursor-pointer text-sm md:text-base" >
+              <div onClick={selectDrink} name="Toofani Tonic" className="absolute top-[60%] md:top-[60%] left-1/2 -translate-x-1/2 opacity-100 md:opacity-0 md:group-hover:opacity-100 md:group-hover:top-1/2 bg-black/20 backdrop-blur-md text-white border border-white/30 py-2 px-6 rounded-lg font-semibold transition-all duration-500 cursor-pointer text-sm md:text-base" >
                 BUY NOW
               </div>
-              <div className="name font-bold absolute top-[-10%] w-48 md:w-56 flex items-center justify-center left-1/2 -translate-x-1/2 text-black opacity-0 group-hover:opacity-100 group-hover:top-10 bg-black/20 backdrop-blur-md cursor-pointer border border-white/30 py-2 px-4 md:px-6 rounded-lg transition-all duration-500 text-sm md:text-base">
+              <div className="name font-bold absolute top-10 md:top-[-10%] w-48 md:w-56 flex items-center justify-center left-1/2 -translate-x-1/2 text-black opacity-100 md:opacity-0 md:group-hover:opacity-100 md:group-hover:top-10 bg-black/20 backdrop-blur-md cursor-pointer border border-white/30 py-2 px-4 md:px-6 rounded-lg transition-all duration-500 text-sm md:text-base">
                 Toofani Tonic
               </div>
 
@@ -109,14 +109,14 @@ const Products = () => {
             <div className="group col w-full sm:w-64 md:w-80 h-60 flex flex-col items-center justify-center relative">
               <img
                 src="src\assets\Drinks\pinkDrink.png"
-                className="w-[88%] h-[85%] rounded-3xl shadow-2xl shadow-blue-700 group-hover:h-full group-hover:w-full transition-all duration-100 cursor-pointer absolute"
+                className="w-[88%] h-[85%] rounded-3xl shadow-2xl shadow-blue-700 md:group-hover:h-full md:group-hover:w-full transition-all duration-100 cursor-pointer absolute"
                 alt="pinkDrink"
               />
 
-              <div onClick={selectDrink} name="Patakha" className="absolute top-[60%] left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-hover:top-1/2 bg-black/20 backdrop-blur-md text-white border border-white/30 py-2 px-6 rounded-lg font-semibold transition-all duration-500 cursor-pointer text-sm md:text-base" >
+              <div onClick={selectDrink} name="Patakha" className="absolute top-[60%] md:top-[60%] left-1/2 -translate-x-1/2 opacity-100 md:opacity-0 md:group-hover:opacity-100 md:group-hover:top-1/2 bg-black/20 backdrop-blur-md text-white border border-white/30 py-2 px-6 rounded-lg font-semibold transition-all duration-500 cursor-pointer text-sm md:text-base" >
                 BUY NOW
               </div>
-              <div className="name font-bold absolute top-[-10%] w-48 md:w-56 flex items-center justify-center left-1/2 -translate-x-1/2 text-black opacity-0 group-hover:opacity-100 group-hover:top-10 bg-black/20 backdrop-blur-md cursor-pointer border border-white/30 py-2 px-4 md:px-6 rounded-lg transition-all duration-500 text-sm md:text-base">
+              <div className="name font-bold absolute top-10 md:top-[-10%] w-48 md:w-56 flex items-center justify-center left-1/2 -translate-x-1/2 text-black opacity-100 md:opacity-0 md:group-hover:opacity-100 md:group-hover:top-10 bg-black/20 backdrop-blur-md cursor-pointer border border-white/30 py-2 px-4 md:px-6 rounded-lg transition-all duration-500 text-sm md:text-base">
                 Patakha
               </div>
             </div>
