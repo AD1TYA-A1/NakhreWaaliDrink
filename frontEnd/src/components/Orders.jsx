@@ -32,7 +32,7 @@ const Orders = () => {
       redirect: "follow"
     };
 
-    fetch("http://localhost:3000/api/users/api/findOrder", requestOptions)
+    fetch("https://nakhredrinkbackend.onrender.com/users/api/findOrder", requestOptions)
       .then((response) => response.json())
       .then((result) => {
         setOrder(result);
