@@ -51,7 +51,6 @@ const UserCheckout = () => {
       setErrors({ ...errors, quantity: false });
     }
   }
-
   const submit = async () => {
     // Validate all fields
     const newErrors = {
@@ -60,24 +59,20 @@ const UserCheckout = () => {
       pNo: pNo.trim() === "",
       quantity: quantity === 0 || quantity === "" || quantity < 1
     };
-
     setErrors(newErrors);
-
+    
     // Check if any field has error
     const hasErrors = Object.values(newErrors).some(error => error === true);
-
-
-    // If validation passes, proceed with submission
-    // console.log(Name);
-    // console.log(Email);
-    // console.log(pNo);
-    // console.log(drinkName);
-    // console.log(quantity);
-
-    //SUBMIT TO DATABSE
+    
+    // If there are errors, don't proceed
+    if (hasErrors) {
+      return; // Add this to prevent submission with errors
+    }
+    
+    // SUBMIT TO DATABASE
     const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
-
+    
     const raw = JSON.stringify({
       "name": Name,
       "email": Email,
@@ -87,14 +82,15 @@ const UserCheckout = () => {
       "price": quantity * 100,
       "timestamps": true
     });
-
+    
     const requestOptions = {
       method: "POST",
       headers: myHeaders,
       body: raw,
+      credentials: 'include', // ADD THIS LINE
       redirect: "follow"
     };
-
+    
     fetch("https://drinksback.onrender.com/api/users/api/userCheckOut", requestOptions)
       .then((response) => response.text())
       .then((result) => {
@@ -107,25 +103,26 @@ const UserCheckout = () => {
           draggable: true,
           progress: undefined,
           theme: "dark",
-
         });
+        
+        // Clear form after successful submission
+        setEmail("");
+        setName("");
+        setpNo("");
+        setQuantity("");
+        
         setTimeout(() => {
-          navigate('/orders', { state: { Email:Email } });
+          navigate('/orders', { state: { Email: Email } });
         }, 2000);
-
       })
-      .catch((error) => console.error(error));
-
-
-
-
-    // Clear form after successful submission
-    setEmail("");
-    setName("");
-    setpNo("");
-    setQuantity("");
-
-    //REDIRECT TO /PRODUCTS END POINT AFTER SUCCESS ORDER
+      .catch((error) => {
+        console.error(error);
+        toast.error('Failed to place order. Please try again.', {
+          position: "top-right",
+          autoClose: 5000,
+          theme: "dark",
+        });
+      });
   }
 
   return (
