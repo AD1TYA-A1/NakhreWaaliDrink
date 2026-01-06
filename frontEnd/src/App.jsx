@@ -2,7 +2,7 @@ import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Landing from './components/Landing'
 import Products from './components/Products'
-import UserCheckout from './components/userCheckOut'
+import UserCheckout from './components/UserCheckOut'
 import Orders from './components/Orders'
 
 function App() {
