@@ -28,7 +28,10 @@ const Orders = () => {
     const requestOptions = {
       method: "POST",
       headers: myHeaders,
+      
       body: raw,
+        credentials: 'include', // ADD THIS LINE
+  
       redirect: "follow"
     };
 
