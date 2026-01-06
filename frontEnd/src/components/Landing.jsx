@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import bottle from '../assets/bottle.png';
 
 const Landing = () => {
     return (
@@ -30,7 +31,7 @@ const Landing = () => {
                     <div className='relative w-3/4 md:w-2/3 lg:w-full max-w-md lg:max-w-lg xl:max-w-xl'>
                         <div className='absolute inset-0 bg-gradient-to-tr from-gray-400 to-gray-200 rounded-full blur-3xl opacity-30 animate-pulse'></div>
                         <img 
-                            src="src\assets\bottle.png" 
+                            src={bottle} 
                             alt="Bottle" 
                             className='relative w-full object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 ease-in-out' 
                         />
