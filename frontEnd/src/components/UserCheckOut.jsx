@@ -95,7 +95,7 @@ const UserCheckout = () => {
       redirect: "follow"
     };
 
-    fetch("https://nakhredrinkbackend.onrender.com/api/users/api/userCheckOut", requestOptions)
+    fetch("https://drinksback.onrender.com/api/users/api/userCheckOut", requestOptions)
       .then((response) => response.text())
       .then((result) => {
         toast('Order Placed Redirecting to orders Section', {
