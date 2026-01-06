@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import bottle from '../assets/bottle.png';
 
 const Landing = () => {
+    // Store bottle in an array/object if you want consistency with carousel pattern
+    const heroImage = bottle;
+
     return (
         <>
             <div className='m-auto min-h-screen flex flex-col lg:flex-row bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 overflow-hidden px-6 py-12 lg:py-0'>
@@ -31,7 +34,7 @@ const Landing = () => {
                     <div className='relative w-3/4 md:w-2/3 lg:w-full max-w-md lg:max-w-lg xl:max-w-xl'>
                         <div className='absolute inset-0 bg-gradient-to-tr from-gray-400 to-gray-200 rounded-full blur-3xl opacity-30 animate-pulse'></div>
                         <img 
-                            src={bottle} 
+                            src={heroImage} 
                             alt="Bottle" 
                             className='relative w-full object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500 ease-in-out' 
                         />
