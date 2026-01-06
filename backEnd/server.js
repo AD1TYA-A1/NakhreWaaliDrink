@@ -9,8 +9,11 @@ const port = process.env.PORT || 3000
 dotenv.config();
 
 app.use(cors({
-    origin: 'https://nakhrewaalidrinkfrontend.onrender.com/',
-    credentials: true
+  origin: [
+    'https://nakhrewaalidrinkfrontend.onrender.com',
+    'http://localhost:3000' // for local development
+  ],
+  credentials: true
 }));
 app.use(express.json());
 
